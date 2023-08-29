@@ -1,0 +1,102 @@
+*{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+body {
+background-color: #f8c3af;
+}
+
+.header{
+    background-color: #ea9abb;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 15px;
+}
+
+.header .logo img{
+    width: 80px; 
+    height: 80px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links a{
+    font-size: 20px;
+    color: #2b2d42;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover{
+    color: #f8c3af;
+}
+/* boton de contacto */
+.header .btn button{
+    margin-left: 20px;
+    font-weight: 700;
+    color: #2b2d42;
+    padding: 9px 25px;
+    background-color: #fea5ad;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    margin-right: 15px;
+}
+
+/* con esto cambiamos el color del buton de contacto al pasar el cursor sobre el boton*/
+.header .btn button:hover{
+    background-color: #be8abf;
+    color: #fea5ad;
+    transform: scale(1.1);
+}
+
+/* container main START*/
+
+.main{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+}
+
+/* container main END*/
+
+/* footer */
+.footer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:center;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10px;
+}
