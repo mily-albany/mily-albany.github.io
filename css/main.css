@@ -33,7 +33,6 @@ body {
     height: 80px;
     transition: all 0.3s;
 }
-
 .header .logo img:hover{
     transform: scale(1.2);
 }
@@ -64,7 +63,8 @@ body {
 .header .btn button{
     margin-left: 20px;
     font-weight: 700;
-    color: #2b2d42;
+    font-size: 20px;
+    color: #be8abf;
     padding: 9px 25px;
     background-color: #fea5ad;
     border: none;
@@ -106,16 +106,71 @@ body {
 }
 
 .main .description{
-    margin: 80px;
     display: flex;
-    flex-direction: row;
+    flex-direction: row ;
+    font-size: 20px;
+    margin: 15px 0px;
+    padding: 40px 0px;
+    color: #2b2d42;
+    width: 90%;
+    height: 80%;
     
 }
 
 .main .description .profile-pic img{
-    max-width: 200px;
+    max-width: 350px;
     max-height: auto;
+    margin: 15px ;
 }
+
+.main .description .description-text{
+    text-align: center;
+    margin: 15px;
+    color: #2b2d42;
+}
+
+.main .description .description-text p{
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.main .purpose {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+    font-size: 20px;
+    /* display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    margin: 15px 0px;
+    padding: 40px 0px;
+    color: #2b2d42;
+    width: 90%;
+    height: 80%; */
+}
+
+.main .purpose .mission {
+    text-align: center;
+    margin-right: 40px;
+}
+.main .purpose .mission p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
+.main .purpose .vision{
+    text-align: center;
+}
+
+.main .purpose .vision p{
+    text-align: justify;
+    margin-top: 15px;
+}
+
 /* @media screen {
     
 }
@@ -128,7 +183,6 @@ body {
 /* footer */
 .footer{
     margin-top: auto;
-    /* position: fixed; */
     width: 100%;
     background-color:#be8abf ;
 }
