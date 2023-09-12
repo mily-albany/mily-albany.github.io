@@ -170,16 +170,6 @@ body {
     margin-top: 15px;
 }
 
-@media screen and (max-width:800px){
-    .main .greeting{
-        width: 90%;
-        /* grid-template-columns: repeat(1, 1fr); */
-        grid-gap: 30px;
-        padding: 35px 0px;
-        align-items: center;
-    }
-}
-
 
 /* container main END*/
 
@@ -256,13 +246,20 @@ se comporte de una manera diferente y evitamos que se rompa el estilo
 ---   RESPONSIVE ----
 */
 @media screen and (max-width:800px){
-    .footer .group-1{
-        width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
-        padding: 35px 0px;
-    }
 
+    .main .greeting{
+        width: 90%;
+        /* grid-template-columns: repeat(1, 1fr); */
+        grid-gap: 30px;
+        padding: 0px;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .main .greeting h1{
+        text-align: center;
+    }
+    
     .main .description{
         width: 90%;
         flex-direction: column;
@@ -270,19 +267,38 @@ se comporte de una manera diferente y evitamos que se rompa el estilo
         align-items: center;
         justify-content: center;
     }
-
+    
     .main .purpose{
         width: 90%;
         margin: 15px;
         padding: 0px;
         grid-template-columns:auto;
+        grid-gap: 30px;
     }
-
+    
     .main .purpose .mission{
-        margin: 15px;
+        margin: 0px 15px;
+    }
+    
+    .main .purpose .vision{
+        margin: 0px 15px;
+    }
+    
+    .footer .group-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        padding: 0px 0px 30px 0px;
     }
 
-    .main .purpose .vision{
-        margin: 15px;
+    .footer .group-1 .box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .footer .group-1 .box h2{
+        margin-bottom: 5px;
     }
 }
