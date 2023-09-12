@@ -137,7 +137,7 @@ body {
 .main .purpose {
     width: 100%;
     max-width: 1200px;
-    margin: auto;
+    margin: 15px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
@@ -155,7 +155,6 @@ body {
 
 .main .purpose .mission {
     text-align: center;
-    margin-right: 40px;
 }
 .main .purpose .mission p{
     text-align: justify;
@@ -171,12 +170,16 @@ body {
     margin-top: 15px;
 }
 
-/* @media screen {
-    
+@media screen and (max-width:800px){
+    .main .greeting{
+        width: 90%;
+        /* grid-template-columns: repeat(1, 1fr); */
+        grid-gap: 30px;
+        padding: 35px 0px;
+        align-items: center;
+    }
 }
-.main .description .description-text{
-    display: block;
-} */
+
 
 /* container main END*/
 
@@ -258,5 +261,28 @@ se comporte de una manera diferente y evitamos que se rompa el estilo
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;
+    }
+
+    .main .description{
+        width: 90%;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main .purpose{
+        width: 90%;
+        margin: 15px;
+        padding: 0px;
+        grid-template-columns:auto;
+    }
+
+    .main .purpose .mission{
+        margin: 15px;
+    }
+
+    .main .purpose .vision{
+        margin: 15px;
     }
 }
